@@ -1,3 +1,19 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block pagetitle %}About US{% endblock %}
+
+{% block slot %}
+
+<div class="container my-5">
+    <div class="col text-center align-items-center">
+        <h1 class="text-center mb-5">🍔 Your Meal Team</h1>
+        <img src="{% static 'chefs.jpg' %}" class="my-5">
+        <p class="fs-3 text">
+            We think about your meal so you don't have to. Our passionate chefs make the most out of the ingredients for the best of your health. <br><br> We have been around since 2016
+        </p>
+    </div>
+</div>
+
+{% endblock %}
