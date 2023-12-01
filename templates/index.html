@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block pagetitle %} Home {% endblock %}
+
+{% block slot %}
+
+<link rel="stylesheet" href="{% static 'index.css' %}">
+
+<div class="container my-5">
+    <h1 class="mb-5">
+        Eat healthy. Be healthy.
+    </h1>
+    <div class="overflow-hidden" style="height: 50vh;">
+        <img id="banner" src="{% static 'restaurant.jpg' %}" alt="restaurant">
+    </div>
+    <h5 class="my-5">
+        Busy with work? We'll be busy making your meal. Just give us a call.
+    </h5>
+</div>
+
+{% endblock %}
